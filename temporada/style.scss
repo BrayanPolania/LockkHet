@@ -23,20 +23,30 @@ body{
           background-size: cover;
           background-position: center center;
           border-radius: 0.25rem;
+          transition: all 0.5s ease-in-out;
         }
         &#producto1{
           .imgProducto{
             background-image: url(../imgs/productos/11.jpeg);
+            &:hover{
+              background-image: url(../imgs/productos/13.jpeg);
+            }
           }
         }
         &#producto2{
           .imgProducto{
             background-image: url(../imgs/productos/21.jpeg);
+            &:hover{
+              background-image: url(../imgs/productos/23.jpeg);
+            }
           }
         }
         &#producto3{
           .imgProducto{
             background-image: url(../imgs/productos/31.jpeg);
+            &:hover{
+              background-image: url(../imgs/productos/33.jpeg);
+            }
           }
         }
         span{
