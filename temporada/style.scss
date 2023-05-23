@@ -1,0 +1,63 @@
+body{
+  main{
+    .title{
+      a{
+        font-size:2rem;
+      }
+    }
+    #productos{
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem 2rem 0;
+      .producto{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        .imgProducto{
+          width:100%;
+          padding-bottom: 100%;
+          cursor: pointer;
+          background-size: cover;
+          background-position: center center;
+          border-radius: 0.25rem;
+        }
+        &#producto1{
+          .imgProducto{
+            background-image: url(../imgs/productos/11.jpeg);
+          }
+        }
+        &#producto2{
+          .imgProducto{
+            background-image: url(../imgs/productos/21.jpeg);
+          }
+        }
+        &#producto3{
+          .imgProducto{
+            background-image: url(../imgs/productos/31.jpeg);
+          }
+        }
+        span{
+          font-size: 1rem;
+        }
+        span:nth-child(2){
+          margin-top: 0.5rem;
+          font-family: "FelixTitling";
+        }
+      }
+    }
+  }
+
+  @media (max-width: 780px) {
+    main #productos{
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+  }
+  @media (max-width: 430px) {
+  
+  
+  
+  }
+}

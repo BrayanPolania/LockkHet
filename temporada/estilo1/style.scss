@@ -1,0 +1,28 @@
+body{
+  main{
+    #productoPrincipal{
+      #imgs{
+        .imgProducto{
+          &#imgProducto1{
+            background-image: url(../../imgs/productos/11.jpeg)
+          }
+          &#imgProducto2{
+            background-image: url(../../imgs/productos/12.jpeg)
+          }
+          &#imgProducto3{
+            background-image: url(../../imgs/productos/13.jpeg)
+          }
+          &#imgProducto4{
+            background-image: url(../../imgs/productos/14.jpeg)
+          }
+          &#imgProducto5{
+            background-image: url(../../imgs/productos/01.jpeg)
+          }
+          &#imgProducto6{
+            background-image: url(../../imgs/productos/02.jpeg)
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+body{
+  main{
+    #productoPrincipal{
+      font-size: 1.5rem;
+      margin: 3rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap:2rem;
+      justify-items: center;
+      #imgs{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        justify-items: center;
+        .imgProducto{
+          // background-color: red;
+          width: 100%;
+          padding-bottom: 100%;
+          background-size: cover;
+          background-position: center center;
+          border-radius: 0.25rem;
+        }
+      }
+
+      #informacion, #estilo, #artista, #obra, #compra, #precio, #talla, #selectTalla{
+        margin-top: 1rem;
+      }
+
+      #informacion, #estilo, #artista, #obra,  #compra{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .titulo1{
+        font-family: 'FelixTitling';
+      }
+      
+      #informacion{
+        width: 80%;
+        font-size: 1.5rem;
+
+        button{
+          border: 4px outset var(--mainColor);
+          padding: 0.5rem;
+          cursor: pointer;
+
+          &:hover{
+            box-shadow: 1px 1px 25px 10px #ddc2ae;
+          }
+        }
+
+        #compra{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          button{
+            font-size: 1.5rem;
+            border-radius: 2rem;
+            width: 80%;
+            margin-top: 0.5rem;
+          }
+        }
+
+        #selectTalla{
+          display: grid;
+          // grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+          grid-template-columns: 1fr 1fr;
+          gap: 0.5rem;
+          .talla{
+            border-radius: 0.25rem;
+            font-size: 1.25rem;
+            height: 3rem;
+          }
+        }
+
+      }
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 912px) {
+        // background-color: red;
+        main{
+          #productoPrincipal{
+            grid-template-columns: 1fr;
+          }
+        }
+  }
+  @media (max-width: 430px) {
+
+  }
+}
